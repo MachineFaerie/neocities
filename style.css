@@ -7,12 +7,12 @@
 
 /* start light mode styling */
 	:root {
-		--text: darkslategrey;
-		--border: lightgrey;
+		--text: #00eeee;
+		--border: #00aaaa;
 		--accent: teal;
-		--bg: #dce3e1;
-		--gradientTop: white;
-		--gradientBottom: rgb(240, 248, 255, .8);
+		--bg: #002222;
+		--gradientTop: #003c3c;
+		--gradientBottom: #002c2c;
 	}
 	header {
 		background: url('***light mode banner image***');
@@ -45,7 +45,7 @@
 }
 body {
 	padding: 10px;
-font-family: "cofo-sans-pixel", sans-serif;
+font-family: VERANDA, sans-serif;
 font-weight: 400;
 font-style: normal;
 	color: var(--text);
@@ -91,7 +91,7 @@ header {
 	position: relative;
 }
 header span {
-	font-size: 2.5rem;
+	font-size: 1rem;
 	position: absolute;
 	bottom: 0;
 	right: 10px;
@@ -103,9 +103,13 @@ header span {
 		-1px -1px var(--accent);
 	color: var(--gradientTop);
 }
+a {
+	color: #00cccc;
+}
 
 
 nav {
+	font-size: .8rem;
 	border: 2px ridge var(--border);
 	border-radius: 5px;
 	padding: 5px;
@@ -113,7 +117,7 @@ nav {
 }
 nav div {
 	text-align: center;
-	font-size: 1.25rem;
+	font-size: .8rem;
 	margin: 5px 5px 10px 5px;
 }
 nav a {
@@ -145,6 +149,7 @@ section {
 	border-radius: 5px;
 	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
 	padding: 5px;
+	font-size: .8rem;
 }
 
 
@@ -155,6 +160,7 @@ footer {
 }
 footer a { 
 	text-decoration: none;
+	font-size: .8rem;
 }
 
 
@@ -163,25 +169,29 @@ h1, h2, h3, h4, h5, h6, p  {
 	line-height: 1.2;
 }
 h1 { 
-	font-size: 1.4rem;
-	letter-spacing: 2px;
+	font-size: .8rem;
+	letter-spacing: 4px;
 	font-weight: normal;
 	text-align: center;
 	border-bottom: 2px ridge var(--border);
 	padding-bottom: 5px;
+	background-color: #002222;
 }
 h2 { 
-	font-size: 1.25rem;
+	font-size: .8rem;
+	letter-spacing: 2px;
 	font-weight: normal;
 	text-align: center;
+
 }
 h3 { 
-	font-size: 1.1rem;
+	font-size: .8rem;
 }
 h4 { 
-	font-size: 1rem;
+	font-size:  .8rem;
 	color: var(--accent);
 	padding-left: 12px;
+	
 }
 
 /* prevents overflow on smaller screens */
@@ -191,6 +201,7 @@ pre { overflow-x: auto; }
 
 a:hover, a:focus {
 	font-style: italic;
+	color: var(--accent);
 }
 a:visited {
 	color: var(--accent);
